@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ProductController {
 	
 	
-	@RequestMapping("/")
+	//  Get data
+	@RequestMapping( "/")
 	public String f1() {
 		return "index";
 	}
 	
-	@RequestMapping("/s1")
+	// save
+	@RequestMapping("/")
 	public void f2() {
 		System.out.println("--- f2 method of ProductCOmntrller");
 	}
