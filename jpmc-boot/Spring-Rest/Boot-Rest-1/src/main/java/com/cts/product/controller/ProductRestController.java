@@ -20,7 +20,7 @@ import ch.qos.logback.classic.spi.STEUtil;
 @RequestMapping("api/product")
 public class ProductRestController {
 
-	Product prod = null;
+	
 	List<Product> prods = new ArrayList<Product>();
 
 	@GetMapping()
@@ -63,7 +63,7 @@ public class ProductRestController {
 
 	@PostMapping()
 	public Product saveProduct(@RequestBody Product prod) {
-		this.prod = prod;
+		//ithis.prod = prod;
 		System.out.println(prod.getId());
 		System.out.println(prod.getName());
 		System.out.println(prod.getPrice());
